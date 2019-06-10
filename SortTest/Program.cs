@@ -13,8 +13,8 @@ namespace SortTest
 		{
 			// TODO Delete
 			//// FOR TEST
-			//var t = BubbleSort.Sort(devTestArray);
-			//Environment.Exit(1);
+			var t = QuickSort.Sort(devTestArray);
+			Environment.Exit(1);
 			//// FOR TEST
 
 			var testArray = GenereateArray(ArrayLength);
