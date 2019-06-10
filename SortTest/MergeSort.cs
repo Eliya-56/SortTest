@@ -40,7 +40,7 @@ namespace SortTest
 					count1++;
 					if (count1 >= sortedArray1.Length)
 					{
-						AppendArray(output, sortedArray2, i, count2);
+						AppendArray(output, sortedArray2, ++i, count2);
 						break;
 					}
 				}
@@ -50,7 +50,7 @@ namespace SortTest
 					count2++;
 					if (count2 >= sortedArray2.Length)
 					{
-						AppendArray(output, sortedArray1, i, count1);
+						AppendArray(output, sortedArray1, ++i, count1);
 						break;
 					}
 				}

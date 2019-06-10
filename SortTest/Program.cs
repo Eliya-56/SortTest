@@ -6,13 +6,16 @@ namespace SortTest
 	class Program
 	{
 		static readonly Random Random = new Random();
-		static readonly int ArrayLength = 10000;
+		static readonly int ArrayLength = 4500;
 		static readonly int[] devTestArray = {67, 43, 123, 435, 65};
 
 		static void Main(string[] args)
 		{
-			var t = MergeSort.Sort(devTestArray);
-			Environment.Exit(1);
+			// TODO Delete
+			//// FOR TEST
+			//var t = MergeSort.Sort(devTestArray);
+			//Environment.Exit(1);
+			//// FOR TEST
 
 			var testArray = GenereateArray(ArrayLength);
 			Stopwatch watch;
@@ -39,9 +42,9 @@ namespace SortTest
 			// Results
 			Console.WriteLine("Array length: " + ArrayLength + " items");
 			Console.WriteLine();
-			Console.WriteLine("Insertion Sort Duration: " + insertionDuration);
-			Console.WriteLine("Merge Sort Duration: " + mergeDuration);
-			Console.WriteLine("Selection Sort Duration: " + selectionDuration);
+			Console.WriteLine("Insertion Sort Duration: " + insertionDuration + " ms");
+			Console.WriteLine("Merge Sort Duration: " + mergeDuration + " ms");
+			Console.WriteLine("Selection Sort Duration: " + selectionDuration + " ms");
 
 			Console.ReadLine();
 		}
